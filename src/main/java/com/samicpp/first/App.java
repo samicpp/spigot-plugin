@@ -6,6 +6,7 @@ public class App extends JavaPlugin {
     @Override
     public void onEnable() {
         getLogger().info("Hello, SpigotMC!");
+        //Bukkit.getServer().dispatchCommand(Bukkit.getServer().getConsoleSender(), "/say welcome");
     }
     @Override
     public void onDisable() {

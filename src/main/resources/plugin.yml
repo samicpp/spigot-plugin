@@ -1,5 +1,5 @@
 name: PluginDemo
-main: com.briangershon.demo.App
+main: com.samicpp.first.App
 description: Plugin Demo
 version: ${project.version}
 api-version: 1.20
