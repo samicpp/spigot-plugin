@@ -3,3 +3,15 @@ main: com.samicpp.first.App
 description: Plugin Demo
 version: ${project.version}
 api-version: 1.20
+commands:
+  basic:
+    description: This is a demo command.
+    usage: /basic [player]
+    permission: PluginDemo.basic
+    permission-message: You don't have permission
+  basic:
+    description: This is another demo command.
+    usage: /test <anything>
+    permission: PluginDemo.test
+    permission-message: You don't have permission
+   

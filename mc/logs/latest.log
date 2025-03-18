@@ -1,0 +1,65 @@
+[12:59:46] [ServerMain/INFO]: [bootstrap] Running Java 21 (OpenJDK 64-Bit Server VM 21.0.5+11-LTS; Microsoft Microsoft-10376803) on Linux 6.8.0-1021-azure (amd64)
+[12:59:46] [ServerMain/INFO]: [bootstrap] Loading Paper 1.21.4-212-main@bb1beda (2025-03-17T10:10:58Z) for Minecraft 1.21.4
+[12:59:46] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
+[12:59:46] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins/PluginDemo-0.0.1.jar'...
+[12:59:47] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins/PluginDemo-0.0.1.jar' in 982ms.
+[12:59:48] [ServerMain/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[12:59:48] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - PluginDemo (0.0.1)
+[12:59:54] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[12:59:57] [ServerMain/INFO]: Loaded 1370 recipes
+[12:59:57] [ServerMain/INFO]: Loaded 1481 advancements
+[12:59:57] [ServerMain/INFO]: [MCTypeRegistry] Initialising converters for DataConverter...
+[12:59:57] [ServerMain/INFO]: [MCTypeRegistry] Finished initialising converters for DataConverter in 346.8ms
+[12:59:57] [Server thread/INFO]: Starting minecraft server version 1.21.4
+[12:59:57] [Server thread/INFO]: Loading properties
+[12:59:57] [Server thread/INFO]: This server is running Paper version 1.21.4-212-main@bb1beda (2025-03-17T10:10:58Z) (Implementing API version 1.21.4-R0.1-SNAPSHOT)
+[12:59:57] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[12:59:58] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[12:59:58] [Server thread/INFO]: Using 4 threads for Netty based IO
+[12:59:59] [Server thread/INFO]: [MoonriseCommon] Paper is using 1 worker threads, 1 I/O threads
+[12:59:59] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[13:00:00] [Server thread/INFO]: Default game type: SURVIVAL
+[13:00:00] [Server thread/INFO]: Generating keypair
+[13:00:00] [Server thread/INFO]: Starting Minecraft server on *:25565
+[13:00:00] [Server thread/INFO]: Using epoll channel type
+[13:00:00] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[13:00:00] [Server thread/INFO]: Paper: Using OpenSSL 1.1.x (Linux x86_64) cipher from Velocity.
+[13:00:00] [Server thread/INFO]: [PluginDemo] Loading server plugin PluginDemo v0.0.1
+[13:00:00] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[13:00:00] [Server thread/INFO]: Preparing level "world"
+[13:00:01] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[13:00:01] [Server thread/INFO]: Preparing spawn area: 0%
+[13:00:01] [Server thread/INFO]: Preparing spawn area: 2%
+[13:00:02] [Server thread/INFO]: Preparing spawn area: 44%
+[13:00:02] [Server thread/INFO]: Preparing spawn area: 44%
+[13:00:02] [Server thread/INFO]: Time elapsed: 1659 ms
+[13:00:02] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[13:00:02] [Server thread/INFO]: Preparing spawn area: 0%
+[13:00:03] [Server thread/INFO]: Time elapsed: 413 ms
+[13:00:03] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[13:00:03] [Server thread/INFO]: Preparing spawn area: 0%
+[13:00:03] [Server thread/INFO]: Time elapsed: 172 ms
+[13:00:03] [Server thread/INFO]: [PluginDemo] Enabling PluginDemo v0.0.1
+[13:00:03] [Server thread/INFO]: [PluginDemo] Hello, SpigotMC! im tired
+[13:00:03] [Server thread/ERROR]: Error occurred while enabling PluginDemo v0.0.1 (Is it up to date?)
+java.lang.NullPointerException: Cannot invoke "org.bukkit.command.PluginCommand.setExecutor(org.bukkit.command.CommandExecutor)" because the return value of "com.samicpp.first.App.getCommand(String)" is null
+	at PluginDemo-0.0.1.jar/com.samicpp.first.App.onEnable(App.java:15) ~[PluginDemo-0.0.1.jar:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:280) ~[paper-api-1.21.4-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.enablePlugin(PaperPluginInstanceManager.java:202) ~[paper-1.21.4.jar:1.21.4-212-bb1beda]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.enablePlugin(PaperPluginManagerImpl.java:109) ~[paper-1.21.4.jar:1.21.4-212-bb1beda]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:520) ~[paper-api-1.21.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.CraftServer.enablePlugin(CraftServer.java:657) ~[paper-1.21.4.jar:1.21.4-212-bb1beda]
+	at org.bukkit.craftbukkit.CraftServer.enablePlugins(CraftServer.java:606) ~[paper-1.21.4.jar:1.21.4-212-bb1beda]
+	at net.minecraft.server.MinecraftServer.loadWorld0(MinecraftServer.java:743) ~[paper-1.21.4.jar:1.21.4-212-bb1beda]
+	at net.minecraft.server.MinecraftServer.loadLevel(MinecraftServer.java:488) ~[paper-1.21.4.jar:1.21.4-212-bb1beda]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:322) ~[paper-1.21.4.jar:1.21.4-212-bb1beda]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1163) ~[paper-1.21.4.jar:1.21.4-212-bb1beda]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:310) ~[paper-1.21.4.jar:1.21.4-212-bb1beda]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[13:00:03] [Server thread/INFO]: [PluginDemo] Disabling PluginDemo v0.0.1
+[13:00:03] [Server thread/INFO]: [PluginDemo] See you again, SpigotMC! still tired
+[13:00:03] [Server thread/INFO]: [spark] Starting background profiler...
+[13:00:04] [Server thread/INFO]: Done preparing level "world" (3.548s)
+[13:00:04] [Server thread/INFO]: Running delayed init tasks
+[13:00:04] [Server thread/INFO]: Done (18.698s)! For help, type "help"
